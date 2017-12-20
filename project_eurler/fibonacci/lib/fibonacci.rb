@@ -3,20 +3,15 @@ class Fibonnaci
   attr_accessor :even_array
 
   def initialize
-    @even_array = []
+    @even_array = [1,2]
   end
 
   def fibonacci(final)
-    a    = [1,2]
     upto = final
-
-    while a[-2] + a[-1] < final
-      a << a[-2] + a[-1]
+    while @even_array[-2] + @even_array[-1] < final
+      @even_array << @even_array[-2] + @even_array[-1]
     end
-
-    @even_array = a
   end
-
 
   def find_total(all)
     sum = 0
