@@ -7,6 +7,13 @@ Here you will find a lot of examples for unit testing. Unit testing tests that f
 To run test for fibonacci, cd into project_eurler, and then cd into fibonacci. Run rspec in the terminal to run tests.
 The fibonacci code if object orientated making it more readable and easier to test.
 You can add tests in the fibonacci_engine_spec.rb folder.
+Example of a test you can run is:
+```
+it 'should return a total of 234168' do
+  @start.fibonacci(4000000)
+  expect(@start.find_total(@start.even_array)).to eq(4613732)
+end
+```
 
 
 # Project Eurler
@@ -26,47 +33,3 @@ To write a test, write
 To run calculator tests, cd into rspec_calculator and run rspec.
 The calculator class runs some basic functions for basic calculations such as adding, subtracting, multiplication and division.
 Tests are written in calc_engine_spec.rb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-c
