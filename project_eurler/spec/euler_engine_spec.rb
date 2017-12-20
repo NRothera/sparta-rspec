@@ -1,4 +1,4 @@
-require './spec_helper'
+require 'spec_helper'
 
 describe Multiples_3_5 do
 

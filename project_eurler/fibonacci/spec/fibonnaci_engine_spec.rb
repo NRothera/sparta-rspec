@@ -1,4 +1,4 @@
-require './spec_helper'
+require 'spec_helper'
 
 describe Fibonnaci do
 
@@ -7,7 +7,8 @@ describe Fibonnaci do
   end
 
   it 'Should return 10' do
-    expect(@start.fibonacci(10)).to eq([1,2,3,5,8])
+    @start.fibonacci(10)
+    expect(@start.even_array).to eq([1,2,3,5,8])
   end
 
   it 'should return a total of 234168' do
